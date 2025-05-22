@@ -1,6 +1,6 @@
 {
   "name": "@owdproject/app-classic-audioplayer",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Audio Player for your Open Web Desktop client",
   "keywords": [
     "owd-client",
