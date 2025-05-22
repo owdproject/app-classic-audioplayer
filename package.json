@@ -1,0 +1,20 @@
+{
+  "name": "@owdproject/app-classic-audioplayer",
+  "version": "0.0.1",
+  "description": "Audio Player for your Open Web Desktop client",
+  "keywords": [
+    "owd-client",
+    "owd-apps",
+    "owd-modules"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/owdproject/app-classic-audioplayer",
+  "author": {
+    "name": "Open Web Desktop Team",
+    "url": "https://github.com/owdproject"
+  },
+  "peerDependencies": {
+    "@owdproject/core": "^3.1.3",
+    "@owdproject/module-fs": "^0.0.1"
+  }
+}
