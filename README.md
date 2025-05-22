@@ -18,6 +18,16 @@ This app for Open Web Desktop provides a basic audio player for the File System 
 owd install-app @owdproject/app-classic-audioplayer
 ```
 
+## Usage
+
+#### Available commands
+
+```
+classic-audioplayer <url>
+classic-audioplayer <url> --loop
+classic-audioplayer <url> --autoplay
+```
+
 ## License
 
 The application is released under the [MIT License](LICENSE).

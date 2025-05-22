@@ -15,6 +15,10 @@ function loadAudioUrl(path: string) {
     return
   }
 
+  if (path.startsWith('http')) {
+    return path
+  }
+
   try {
     const buffer = fs.readFileSync(path)
     const blob = new Blob([buffer], { type: 'audio/mp3' })
