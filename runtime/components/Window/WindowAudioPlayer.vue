@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { fs } from '@zenfs/core'
 import { useI18n } from 'vue-i18n'
+import { getFilename } from '@owdproject/module-fs/runtime/utils/utilFileSystem'
+import { ref } from 'vue'
 
 const props = defineProps<{
   window: Window
@@ -9,6 +11,9 @@ const props = defineProps<{
 const { t } = useI18n()
 
 const filePath = loadAudioUrl(props.window.meta.path)
+const title = ref(getFilename(props.window.meta.path))
+
+props.window.setTitleOverride(title)
 
 function loadAudioUrl(pathString: string) {
   if (!pathString) {
@@ -23,7 +28,9 @@ function loadAudioUrl(pathString: string) {
     const buffer = fs.readFileSync(pathString)
     const lastDotIndex = pathString.lastIndexOf('.')
     const lastSlashIndex = pathString.lastIndexOf('/')
+
     let ext = ''
+
     if (lastDotIndex > lastSlashIndex) {
       ext = pathString.substring(lastDotIndex).toLowerCase()
     }
