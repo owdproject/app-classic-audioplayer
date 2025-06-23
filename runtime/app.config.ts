@@ -5,7 +5,7 @@ export default {
   icon: 'mdi:volume-high',
   provides: {
     name: 'audio-player',
-    command: 'classic-audioplayer',
+    entry: 'player',
   },
   windows: {
     main: {
@@ -20,6 +20,11 @@ export default {
         y: 240,
         z: 0,
       },
+    },
+  },
+  entries: {
+    player: {
+      command: 'classic-audioplayer',
     },
   },
   commands: {
