@@ -112,7 +112,7 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <Window :window="props.window" :content="{ padded: true }">
+  <DesktopWindow :window="props.window" :content="{ padded: true }">
     <audio
       ref="audioRef"
       :key="trackPath ?? ''"
@@ -121,5 +121,5 @@ onBeforeUnmount(() => {
       :loop="Boolean(props.window.meta?.loop)"
       class="block w-full max-w-full"
     />
-  </Window>
+  </DesktopWindow>
 </template>

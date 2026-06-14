@@ -59,7 +59,7 @@ function loadAudioUrl(pathString: string) {
 </script>
 
 <template>
-  <Window v-bind="$props">
+  <DesktopWindow v-bind="$props">
     <audio
       :src="filePath"
       :controls="!props.window.meta.noControls"
@@ -67,5 +67,5 @@ function loadAudioUrl(pathString: string) {
       :loop="props.window.meta.loop"
       class="m-2"
     />
-  </Window>
+  </DesktopWindow>
 </template>
