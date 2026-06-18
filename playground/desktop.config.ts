@@ -7,7 +7,7 @@ export default defineDesktopConfig({
   systemBar: { enabled: true, startButton: true },
   fs: {
     mounts: {
-      '/mnt/test': '/test-small.zip',
+      '/mnt/test': '/test.zip',
     },
   },
 })

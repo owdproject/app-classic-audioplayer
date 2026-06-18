@@ -7,7 +7,7 @@ const APP_ID = 'org.owdproject.classic-audioplayer'
 
 export default defineNuxtPlugin({
   name: 'app-classic-audioplayer-playground-launch',
-  dependsOn: ['owd-app-classic-audioplayer-register'],
+  dependsOn: ['desktop-app-classic-audioplayer-register'],
   async setup(nuxtApp) {
     if (!import.meta.dev) return
 
