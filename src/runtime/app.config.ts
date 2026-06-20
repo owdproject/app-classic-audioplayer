@@ -19,11 +19,6 @@ export default {
         minWidth: 280,
         minHeight: 100,
       },
-      position: {
-        x: 400,
-        y: 240,
-        z: 0,
-      },
     },
   },
   entries: {
